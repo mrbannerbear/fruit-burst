@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Burst</title>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            'main-red': '#B68C5A',
-            'second-orange': '#FF8938',
-            'new-gray': '#707070',
-
+            'main-red': '#F85559'
       }
 
     }
@@ -26,8 +24,91 @@
 
 <script src="https://kit.fontawesome.com/f49b128aef.js" crossorigin="anonymous"></script>
 
+<style>
+    .font-lato{font-family: 'Lato', sans-serif;}
+</style>
+
 </head>
-<body>
-    
+
+<body class="font-lato">
+
+
+    <header class="lg:px-24 p-4 lg:py-8 border">
+
+        <!-- Navbar section -->
+
+        <nav >
+
+        <!-- small & medium screens -->
+        
+        <div class="flex justify-between lg:hidden">
+            <div class="">
+              <a class="btn btn-ghost normal-case text-black font-bold text-xl p-0">
+                <img src="images/logo.png" class="w-7" alt="">
+                <span>Fruit Burst</span>
+              </a>
+            </div>
+            <div class="dropdown dropdown-left flex-none">
+                <label tabindex="0" class="btn btn-ghost btn-circle w-full h-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-xs dropdown-content dropdown-menu-right mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+          </div>
+
+          <!-- large screens -->
+
+        
+
+        <div class="navbar hidden lg:flex justify-between bg-main-red rounded-[100px] py-4 px-8 text-white">
+                <div class="navbar-start">
+
+                        <ul class="menu menu-horizontal px-1">
+                          <li><a>Home</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>All Fruits</a></li>
+                        </ul>
+
+                </div>
+                <div class="navbar-center">
+                  <a class="btn btn-ghost">
+                    <img src="images/logo.png" class="w-10" alt=""> 
+                    <span class="normal-case text-3xl">Fruit Burst</span> </a>
+                </div>
+                <div class="navbar-end">
+
+                    <input type="text" placeholder="Search Here" class="input outline-none rounded-3xl w-3/4 max-w-xs relative" />
+
+                    <button class="btn btn-ghost btn-circle absolute">
+                        <i class="fa-solid fa-search text-black"></i>
+                    </button>
+                    
+                </div>
+        </div>
+
+
+        
+
+        </nav>
+        <!-- Banner section -->
+        <section class="banner">
+
+        </section>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
