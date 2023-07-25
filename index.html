@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cupcake">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
 <body class="font-lato">
 
 
-    <header class="lg:px-24 p-4 lg:py-8 border">
+    <header class="lg:px-24 p-4 lg:py-8">
 
         <!-- Navbar section -->
 
@@ -49,7 +49,7 @@
               </a>
             </div>
             <div class="dropdown dropdown-left flex-none">
-                <label tabindex="0" class="btn btn-ghost btn-circle w-full h-full">
+                <label tabindex="0" class="btn btn-ghost btn-circle w-full h-full p-2">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </label>
                 <ul tabindex="0" class="menu menu-xs dropdown-content dropdown-menu-right mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -57,6 +57,13 @@
                     <li><a>About Us</a></li>
                     <li><a>Shop</a></li>
                     <li><a>All Fruits</a></li>
+                    <div><input type="search" class="rounded-2xl border p-2 mt-2" placeholder="Search Here" name="" id="">
+                      <button class="btn btn-ghost btn-circle absolute right-[12%]">
+                        <i class="fa-solid fa-search text-black"></i>
+                    </button>
+                    
+                    </div>
+                  
                 </ul>
               </div>
           </div>
@@ -83,7 +90,7 @@
                 </div>
                 <div class="navbar-end">
 
-                    <input type="text" placeholder="Search Here" class="input outline-none rounded-3xl w-3/4 max-w-xs relative" />
+                    <input type="text" placeholder="Search Here" class="input outline-none rounded-3xl w-3/4 max-w-xs relative text-black" />
 
                     <button class="btn btn-ghost btn-circle absolute">
                         <i class="fa-solid fa-search text-black"></i>
@@ -96,8 +103,115 @@
         
 
         </nav>
+
+
         <!-- Banner section -->
-        <section class="banner">
+        <section class="banner mt-5 md:mt-10 relative">
+            <div class="carousel w-full md:h-[calc(100vh-120px)] rounded-xl">
+
+                <div id="slide1" class="carousel-item relative w-full">
+                    
+                    <div class="hero" style="background-image: url(images/banner1.png);">
+                        <div class="hero-content 
+                        bg-gradient-to-b from-[#121212] via-[#12121234] to-[#12121200] backdrop-brightness-105 hero-overlay
+                         text-center text-neutral-content text-white bg-cover">
+                          <div class="max-w-md px-8 py-3">
+                            <h1 class="mb-5 text-2xl lg:text-5xl md:text-4xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn border-none text-white bg-main-red">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                  
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle bg-[#121212] text-white border-none">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-[#121212] text-white border-none">❯</a>
+                  </div>
+
+                    
+                </div> 
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    
+                    <div class="hero" style="background-image: url(images/banner2.png);">
+                        <div class="hero-content 
+                        bg-gradient-to-b from-[#121212] via-[#12121217] to-[#12121200] backdrop-brightness-105 hero-overlay
+                         text-center text-neutral-content text-white bg-cover">
+                          <div class="max-w-md px-8 py-3">
+                            <h1 class="mb-5 text-2xl lg:text-5xl md:text-4xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn border-none text-white bg-main-red">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                  
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle bg-[#121212] text-white border-none">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-[#121212] text-white border-none">❯</a>
+                  </div>
+
+                    
+                </div> 
+
+                <div id="slide3" class="carousel-item relative w-full">
+                    
+                    <div class="hero" style="background-image: url(images/banner3.png);">
+                        <div class="hero-content 
+                        bg-gradient-to-b from-[#121212] via-[#12121217] to-[#12121200] backdrop-brightness-105 hero-overlay
+                         text-center text-neutral-content text-white bg-cover">
+                          <div class="max-w-md px-8 py-3">
+                            <h1 class="mb-5 text-2xl lg:text-5xl md:text-4xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn border-none text-white bg-main-red">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                  
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle bg-[#121212] text-white border-none">❮</a> 
+                    <a href="#slide4" class="btn btn-circle bg-[#121212] text-white border-none">❯</a>
+                  </div>
+
+                    
+                </div> 
+
+                <div id="slide4" class="carousel-item relative w-full">
+                    
+                    <div class="hero" style="background-image: url(images/banner4.png);">
+                        <div class="hero-content 
+                        bg-gradient-to-b from-[#121212] via-[#12121217] to-[#12121200] backdrop-brightness-105 hero-overlay
+                         text-center text-neutral-content text-white bg-cover">
+                          <div class="max-w-md px-8 py-3">
+                            <h1 class="mb-5 text-2xl lg:text-5xl md:text-4xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn border-none text-white bg-main-red">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                  
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle bg-[#121212] text-white border-none">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-[#121212] text-white border-none">❯</a>
+                  </div>
+
+                    
+                </div> 
+               
+
+              </div>
+        </section>
+
+        <!-- Bonus Section -->
+        <section class="w-3/4 mx-auto bg-white rounded-lg top-[90%] shadow-md
+        right-0 left-0 absolute lg:flex justify-around items-center py-8 text-[#121212ee] px-10 hidden">
+
+          <div>
+            <img src="images/fruit1.png" class="w-24" alt=""> <p class="text-center">Grapes</p>
+          </div>
+          <div><img src="images/fruit2.png" class="w-20" alt=""> <p class="text-center">Orange</p></div>
+          <div><img src="images/fruit3.png" class="w-24" alt=""> <p class="text-center">Mango</p></div>
+          <div><img src="images/fruit4.png" class="w-24" alt=""> <p class="text-center">Strawberry</p></div>
+          <div><img src="images/fruit5.png" class="w-24" alt=""> <p class="text-center">Pomegranate</p></div>
 
         </section>
 
@@ -107,7 +221,33 @@
 
     </main>
 
-    <footer>
+    <footer class="h-70vh bg-[#121212] text-white lg:mt-20">
+      
+
+      <section class="footer footer-center p-12 text-white rounded">
+
+        <div class="flex gap-3"><img src="images/logo.png" class="w-12" alt=""><h3 class="text-3xl font-bold">Fruit Burst</h3></div>
+
+        <div class="flex flex-wrap justify-center content-start gap-8">
+          <a class="link link-hover">Home</a> 
+          <a class="link link-hover">About us</a> 
+          <a class="link link-hover">Shop</a> 
+          <a class="link link-hover">All Fruits</a> 
+          <a class="link link-hover">Support</a>
+          <a class="link link-hover">My Account</a>
+        </div> 
+        <div>
+          <div class="grid grid-flow-col gap-8">
+           <a class="link"><i class="fa-brands fa-twitter text-2xl"></i></a>
+           <a class="link"><i class="fa-brands fa-facebook text-2xl"></i></a>
+           <a class="link"><i class="fa-brands fa-youtube text-2xl"></i></a>
+           <a class="link"><i class="fa-brands fab fa-linkedin-in text-2xl"></i></a>
+           <a class="link"><i class="fa-brands fab fa-instagram text-2xl"></i></a>
+           <a class="link"><i class="fa-brands fab fa-apple text-2xl"></i></a>
+          </div>
+        </div> 
+
+      </section>
 
     </footer>
 </body>
